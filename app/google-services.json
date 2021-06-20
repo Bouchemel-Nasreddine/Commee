@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "876025538360",
+    "project_id": "commee-d7a23",
+    "storage_bucket": "commee-d7a23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876025538360:android:e2bae1e043a0d490c143cd",
+        "android_client_info": {
+          "package_name": "com.exemple.commee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876025538360-tdj6arl5vfae6vldticdst4j3nd5r561.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUzTEsSzJHwKUGHa4XWhBxMNhEWpjWSRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876025538360-tdj6arl5vfae6vldticdst4j3nd5r561.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

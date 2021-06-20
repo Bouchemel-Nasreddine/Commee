@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Commee</string>
+    <string name="home">HOME</string>
+    <string name="search">SEARCH</string>
+    <string name="cart">CART</string>
+    <string name="person">PERSON</string>
+    <string name="search_for_products">search for products</string>
+    <string name="categories">Categories</string>
+    <string name="men_s">Men\'s</string>
+    <string name="women_s">Women\'s</string>
+    <string name="electronics">electronics</string>
+    <string name="jewelry">Jewelry</string>
+    <string name="login"><u>Login</u></string>
+    <string name="signup"><u>Sign Up</u></string>
+</resources>

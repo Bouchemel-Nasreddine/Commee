@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_settings_picture"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/light_sky_bleu"
+            android:scaleType="centerCrop"
+            android:src="@drawable/material_person"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circular" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_settings_edit_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundTint="@color/purple"
+            app:icon="@drawable/pen"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/profile_settings_picture"
+            app:layout_constraintRight_toRightOf="@id/profile_settings_picture"
+            app:shapeAppearanceOverlay="@style/circular" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="User Name"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/profile_settings_user_name"
+            app:layout_constraintLeft_toLeftOf="@id/profile_settings_user_name" />
+
+        <EditText
+            android:id="@+id/profile_settings_user_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/metropolis_semibold"
+            android:padding="10dp"
+            android:text="Zaki Junior"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_settings_picture"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Email"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/profile_settings_email"
+            app:layout_constraintLeft_toLeftOf="@id/profile_settings_user_name" />
+
+        <EditText
+            android:id="@+id/profile_settings_email"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:fontFamily="@font/metropolis_semibold"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:text="zakijunior@gmail.com"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_settings_user_name"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Birth Date"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/profile_settings_birth_date"
+            app:layout_constraintLeft_toLeftOf="@id/profile_settings_user_name" />
+
+        <EditText
+            android:id="@+id/profile_settings_birth_date"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/metropolis_semibold"
+            android:padding="10dp"
+            android:text="16/06/2000"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_settings_email"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/profile_settings_phone_number"
+            app:layout_constraintLeft_toLeftOf="@id/profile_settings_user_name" />
+
+        <EditText
+            android:id="@+id/profile_settings_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/metropolis_semibold"
+            android:padding="10dp"
+            android:text="+213 550 743 933"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_settings_birth_date"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Password"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/profile_settings_password"
+            app:layout_constraintLeft_toLeftOf="@id/profile_settings_user_name" />
+
+        <EditText
+            android:id="@+id/profile_settings_password"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/metropolis_semibold"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:text="00000000"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_settings_phone_number"
+            app:layout_constraintWidth_percent=".8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_settings_edit_password"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="38dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            app:backgroundTint="@color/transparent"
+            app:icon="@drawable/edit"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/profile_settings_password"
+            app:layout_constraintRight_toRightOf="@id/profile_settings_password"
+            app:layout_constraintTop_toTopOf="@id/profile_settings_password" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:layout_constraintTop_toBottomOf="@id/profile_settings_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

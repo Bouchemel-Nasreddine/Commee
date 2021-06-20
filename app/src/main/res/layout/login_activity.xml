@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/singup_back">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/login_back"
+        app:icon="@drawable/back"
+        app:backgroundTint="@color/transparent"
+        style="?attr/borderlessButtonStyle"
+        app:iconTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metropolis_thin"
+        android:text="Email"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/profile_login_email"
+        app:layout_constraintLeft_toLeftOf="@id/profile_login_email" />
+
+    <EditText
+        android:id="@+id/profile_login_email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:maxLines="1"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/metropolis_semibold"
+        android:hint="enter email"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metropolis_thin"
+        android:text="Password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/profile_login_password"
+        app:layout_constraintLeft_toLeftOf="@id/profile_login_email" />
+
+    <EditText
+        android:id="@+id/profile_login_password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/metropolis_semibold"
+        android:hint="enter password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_login_email"
+        app:layout_constraintWidth_percent=".8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/metropolis_semibold"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/pink"
+        android:textSize="12sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_login_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_redirect"
+        app:layout_constraintTop_toBottomOf="@id/login_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:text="@string/signup"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/singup_back">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/signup_back"
+            app:icon="@drawable/back"
+            app:backgroundTint="@color/transparent"
+            style="?attr/borderlessButtonStyle"
+            app:iconTint="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="User Name"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/profile_signup_user_name"
+            app:layout_constraintLeft_toLeftOf="@id/profile_signup_user_name" />
+
+        <EditText
+            android:id="@+id/profile_signup_user_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/metropolis_semibold"
+            android:hint="enter user name"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Email"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/profile_signup_email"
+            app:layout_constraintLeft_toLeftOf="@id/profile_signup_user_name" />
+
+        <EditText
+            android:id="@+id/profile_signup_email"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/metropolis_semibold"
+            android:hint="enter email"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_signup_user_name"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Birth Date"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/profile_signup_birth_date"
+            app:layout_constraintLeft_toLeftOf="@id/profile_signup_user_name" />
+
+        <EditText
+            android:id="@+id/profile_signup_birth_date"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/metropolis_semibold"
+            android:hint="enter birth date"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_signup_email"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Phone Number"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/profile_signup_phone_number"
+            app:layout_constraintLeft_toLeftOf="@id/profile_signup_user_name" />
+
+        <EditText
+            android:id="@+id/profile_signup_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/metropolis_semibold"
+            android:hint="enter phone number"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_signup_birth_date"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_thin"
+            android:text="Password"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/profile_signup_password"
+            app:layout_constraintLeft_toLeftOf="@id/profile_signup_user_name" />
+
+        <EditText
+            android:id="@+id/profile_signup_password"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/metropolis_semibold"
+            android:hint="enter password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_signup_phone_number"
+            app:layout_constraintWidth_percent=".8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup_button"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/pink"
+            android:textSize="12sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_signup_password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_redirect"
+            app:layout_constraintTop_toBottomOf="@id/signup_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/white"
+            android:text="@string/login"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
